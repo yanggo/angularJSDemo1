@@ -6,8 +6,18 @@
 		<meta content="yes" name="apple-mobile-web-app-capable">
 		<meta content="black" name="apple-mobile-web-app-status-bar-style">
 		<meta content="telephone=no" name="format-detection">
-		<title>exmple</title>
+		<title>{{headTitle}}</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
 	</head>
 	<body>
+		<div class="header">
+	      <a href back-button class="btn-back" ng-show="backBol"><span> </span></a>
+	      <h2 class="title"><span ng-bind="title"></span></h2>
+	      <fav-btn></fav-btn>
+	    </div>
+	    
+	    <div ng-view=""></div>
+	    <loading></loading>
+	    <script data-main="js/main" src="js/builds/require.js"></script>
 	</body>
 </html>
