@@ -12,6 +12,7 @@ require.config({
 		"stickUp": "builds/stickUp",
 		"jquery": "builds/jquery203",
 		"indexCtrl": "controllers/indexCtrl",
+		"loadingCtrl": "controllers/loadingCtrl",
 		"route": "myRoute",
 		"app": "app",
 	},
@@ -42,7 +43,7 @@ require.config({
 	}
 });
 
-require(['jquery','angular','angular-route','angular-sanitize','blocksit','idTabs','stickUp','app','route','indexCtrl'],function($,angular){
+require(['jquery','angular','angular-route','angular-sanitize','loadingCtrl','blocksit','idTabs','stickUp','app','route','indexCtrl'],function($,angular){
 	$(function(){
 		angular.bootstrap(document,["myApp"]);
 	});
