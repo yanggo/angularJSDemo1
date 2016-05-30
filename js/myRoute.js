@@ -8,7 +8,7 @@ define(["app"],function(app){
 		  })
 		  .when('/details', {
 		  	templateUrl: 'views/details.html',
-		  	controller: 'detailCtrl'
+		  	controller: 'detailsCtrl'
 		  })
 		  .otherwise({ redirectTo: '/' });
 	}]);

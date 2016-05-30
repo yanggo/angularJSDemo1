@@ -1,5 +1,5 @@
-define(["app"],function(app){
-	return app.controller('indexCtrl',["$scope","$rootScope","$http",function($scope,$rootScope,$http){
+define(["app","geoFactory"],function(app,geoFactory){
+	return app.controller('indexCtrl',["$scope","$rootScope","$http","geoFactory",function($scope,$rootScope,$http,geoFactory){
 		$rootScope.headTitle = $rootScope.title = "首页";
 		$rootScope.favBol = false;
 		$rootScope.backBol = false;

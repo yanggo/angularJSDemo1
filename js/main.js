@@ -13,8 +13,12 @@ require.config({
 		"jquery": "builds/jquery203",
 		"indexCtrl": "controllers/indexCtrl",
 		"loadingCtrl": "controllers/loadingCtrl",
+		"detailsCtrl": "controllers/detailsCtrl",
+		"geo": "directives/geo",
+		"telBox": "directives/telBox",
 		"route": "myRoute",
 		"app": "app",
+		"geoFactory": "geoFactory",
 	},
 	shim: {
 		"angular": {
@@ -43,7 +47,7 @@ require.config({
 	}
 });
 
-require(['jquery','angular','angular-route','angular-sanitize','loadingCtrl','blocksit','idTabs','stickUp','app','route','indexCtrl'],function($,angular){
+require(['jquery','angular','angular-route','angular-sanitize','loadingCtrl','blocksit','idTabs','stickUp','app','route','geoFactory','geo','telBox','indexCtrl','detailsCtrl'],function($,angular){
 	$(function(){
 		angular.bootstrap(document,["myApp"]);
 	});
